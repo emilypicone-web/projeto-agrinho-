@@ -1,0 +1,235 @@
+/* Definição de Variáveis de Cores (Paleta Feminina e Orgânica) */
+:root {
+    --rosa-suave: #F7EBE8;
+    --rosa-medio: #E8C5C8;
+    --rosa-escuro: #B87D83;
+    --verde-cha: #A2B997;
+    --verde-escuro: #4A5B42;
+    --fundo-creme: #FDFBF7;
+    --texto-escuro: #3D3434;
+    --texto-claro: #FFFFFF;
+    --fonte-titulo: 'Playfair Display', serif;
+    --fonte-corpo: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-corpo);
+    background-color: var(--fundo-creme);
+    color: var(--texto-escuro);
+    line-height: 1.6;
+}
+
+/* Header com Visual Delicado */
+header {
+    background: linear-gradient(135deg, var(--rosa-medio) 0%, var(--verde-cha) 100%);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: var(--fundo-creme);
+    border-radius: 50% 50% 0 0;
+}
+
+.header-container h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    color: var(--texto-escuro);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.header-container .subtitle {
+    font-size: 1.2rem;
+    color: rgba(61, 52, 52, 0.85);
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+.intro h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.2rem;
+    color: var(--verde-escuro);
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #665C5C;
+}
+
+/* Botões de Controle/Filtro */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: var(--texto-claro);
+    border: 2px solid var(--rosa-medio);
+    color: var(--texto-escuro);
+    padding: 10px 25px;
+    font-family: var(--fonte-corpo);
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover, .btn.active {
+    background-color: var(--rosa-escuro);
+    border-color: var(--rosa-escuro);
+    color: var(--texto-claro);
+    box-shadow: 0 4px 10px rgba(184, 125, 131, 0.2);
+}
+
+/* Container de Comparação (Layout Lado a Lado) */
+.comparison-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Cards Estilizados */
+.card {
+    background-color: var(--texto-claro);
+    border-radius: 20px;
+    padding: 35px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 10px 25px rgba(143, 114, 114, 0.05);
+    border: 1px solid rgba(232, 197, 200, 0.4);
+    position: relative;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-badge {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge-tradicional {
+    background-color: var(--rosa-suave);
+    color: var(--rosa-escuro);
+}
+
+.badge-sustentavel {
+    background-color: rgba(162, 185, 151, 0.2);
+    color: var(--verde-escuro);
+}
+
+.card h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--texto-escuro);
+}
+
+.card-desc {
+    font-size: 0.95rem;
+    color: #7A6F6F;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Marcadores fofos/delicados na lista */
+.card ul li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: var(--rosa-escuro);
+}
+
+.sustentavel ul li::before {
+    color: var(--verde-cha);
+}
+
+/* Seção de Reflexão */
+.reflexao {
+    margin: 60px auto 20px auto;
+    text-align: center;
+    max-width: 700px;
+    border-top: 1px solid var(--rosa-medio);
+    padding-top: 40px;
+}
+
+.reflexao blockquote {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    color: var(--verde-escuro);
+    font-style: italic;
+}
+
+/* Rodapé */
+footer {
+    background-color: #EFEAE4;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+    color: #7A6F6F;
+    margin-top: 60px;
+    border-top: 1px solid rgba(232, 197, 200, 0.3);
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .header-container h1 {
+        font-size: 2.2rem;
+    }
+    .comparison-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Agro forte, futuro sustentável</h1>
+            <p class="subtitle">O equilíbrio perfeito entre a força da produção e a leveza do meio ambiente</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Cultivando o Amanhã</h2>
+            <p>A agricultura move o mundo, mas o futuro exige sabedoria. Compreender a diferença entre as práticas tradicionais e as abordagens sustentáveis é o primeiro passo para semear um planeta mais equilibrado e próspero.</p>
+        </section>
+
+        <div class="controls">
+            <button class="btn active" onclick="filtrarCards('todos')">Ver Ambos</button>
+            <button class="btn" onclick="filtrarCards('tradicional')">Agricultura Tradicional</button>
+            <button class="btn" onclick="filtrarCards('sustentavel')">Agricultura Sustentável</button>
+        </div>
+
+        <section class="comparison-container">
+            <div class="card tradicional">
+                <div class="card-badge badge-tradicional">Tradicional</div>
+                <h3>Práticas Tradicionais</h3>
+                <p class="card-desc">Focada na alta produtividade imediata, muitas vezes dependente de ciclos intensivos.</p>
+                <ul>
+                    <li><strong>Solo:</strong> Uso intensivo de fertilizantes químicos e aração profunda.</li>
+                    <li><strong>Água:</strong> Sistemas de irrigação de alto consumo sem reaproveitamento.</li>
+                    <li><strong>Defensivos:</strong> Dependência alta de defensivos agrícolas sintéticos.</li>
+                    <li><strong>Biodiversidade:</strong> Predomínio de monoculturas em grandes extensões.</li>
+                </ul>
+            </div>
+
+            <div class="card sustentavel">
+                <div class="card-badge badge-sustentavel">Sustentável</div>
+                <h3>Práticas Sustentáveis</h3>
+                <p class="card-desc">Equilibra a produção de alimentos com a preservação dos recursos naturais para as próximas gerações.</p>
+                <ul>
+                    <li><strong>Solo:</strong> Plantio direto, rotação de culturas e adubação orgânica.</li>
+                    <li><strong>Água:</strong> Captação de chuva e irrigação gota a gota localizada.</li>
+                    <li><strong>Defensivos:</strong> Controle biológico e manejo integrado de pragas (MIP).</li>
+                    <li><strong>Biodiversidade:</strong> Preservação de matas ciliares e incentivo à polinização.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="reflexao">
+            <blockquote>
+                "Preservar a terra não é apenas proteger a natureza, é garantir o sustento e o carinho que alimentam as futuras gerações."
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 • Agro Forte, Futuro Sustentável • Desenvolvido com afeto e consciência ambiental.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
